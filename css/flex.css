@@ -1,13 +1,20 @@
 main {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  /* flex-direction: row; */
+  justify-content: space-around;
   background-color: chartreuse;
+  height: 400px;
 }
 
 section {
-  background-color: crimson;
-  display: flex;
-  justify-content: center;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
   margin: auto;
+  /* background-color: crimson;
+  display: flex;
+  border-radius: 1px solid blue; */
+  /* flex-grow: 1; */
+  /* justify-content: center;
+  margin: auto; */
 }
