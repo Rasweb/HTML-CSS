@@ -1,9 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+h1 {
+  background-color: teal;
+}
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: deepskyblue;
   align-items: center;
+  /* height: 80%; */
 }
 
 section {
@@ -16,18 +23,20 @@ section {
   justify-content: center;
 }
 
-/* main > section:third-child {
-  flex-grow: 2;
-} */
-
 @media screen and (min-width: 786px) {
   main {
     flex-direction: row;
+    height: 80%;
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
   }
 }
 
 @media screen and (min-width: 1024px) {
   main {
     background-color: turquoise;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80%;
   }
 }
