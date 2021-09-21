@@ -1,26 +1,34 @@
 main {
   display: flex;
-  /* flex-direction: row; */
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: deepskyblue;
   height: 400px;
+  align-items: center;
 }
 
 section {
   background-color: crimson;
   border: 1px solid yellow;
-  width: 200px;
+  width: 40%;
   height: 200px;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
 }
 
-main > section:third-child {
+/* main > section:third-child {
   flex-grow: 2;
-}
+} */
 
 @media screen and (min-width: 786px) {
+  main {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  main {
+    background-color: turquoise;
+  }
 }
