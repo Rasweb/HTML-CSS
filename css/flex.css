@@ -1,11 +1,11 @@
-.flex-col {
+main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: chartreuse;
 }
 
-.flex-col > div {
+section {
   background-color: crimson;
   display: flex;
   justify-content: center;
