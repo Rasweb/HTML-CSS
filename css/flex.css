@@ -2,19 +2,23 @@ main {
   display: flex;
   /* flex-direction: row; */
   justify-content: space-around;
-  background-color: chartreuse;
+  background-color: deepskyblue;
   height: 400px;
 }
 
 section {
-  background-color: blue;
+  background-color: crimson;
+  border: 1px solid yellow;
   width: 100px;
   height: 100px;
   margin: auto;
   /* background-color: crimson;
-  display: flex;
-  border-radius: 1px solid blue; */
+  display: flex;*/
   /* flex-grow: 1; */
   /* justify-content: center;
   margin: auto; */
+}
+
+main > section:third-child {
+  flex-grow: 2;
 }
