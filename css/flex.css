@@ -19,8 +19,14 @@ h1 {
   flex-grow: 1;
 }
 
-image {
+.image-con {
+  width: 300px;
+}
+
+/* Begränsar bildens bred, medan höjden anpassas av webbläsaren. */
+.image-con img {
   width: 100%;
+
 }
 
 @media screen and (min-width: 786px) {
@@ -38,4 +44,5 @@ image {
     background-color: turquoise;
     flex-direction: row;
   }
+
 }
