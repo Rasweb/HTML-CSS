@@ -5,38 +5,35 @@ body {
 h1 {
   background-color: teal;
 }
-main {
+.flex-b {
   display: flex;
   flex-direction: column;
-  background-color: deepskyblue;
-  align-items: center;
-  /* height: 80%; */
+  flex-grow: 1;
+  background-color: skyblue;
 }
 
-section {
-  background-color: crimson;
-  border: 1px solid yellow;
-  width: 40%;
-  height: 200px;
+.flex-b > section {
+  border: 1px solid seagreen;
   flex-grow: 1;
-  display: flex;
-  justify-content: center;
 }
 
 @media screen and (min-width: 786px) {
-  main {
+  .flex-b {
     flex-direction: row;
-    height: 80%;
-    justify-content: space-around;
-    /* justify-content: space-evenly; */
+  }
+
+  .flex-b > section {
+    flex-grow: 2;
+  }
+
+  .flex-b > section:second-child {
+    flex-grow: 1;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main {
+  .flex-b {
     background-color: turquoise;
     flex-direction: row;
-    justify-content: space-evenly;
-    height: 80%;
   }
 }
