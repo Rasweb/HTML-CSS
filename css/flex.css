@@ -1,6 +1,5 @@
 .flex-b, html, body {
   height: 100%;
-  margin: 0;
   background-color:skyblue;
 }
 
@@ -52,13 +51,10 @@ footer{
     
   }
 
-  .flex-b > section {
-    display: flex;
-    flex-shrink: 2;
-  }
+
 
   .image-con {
-    width: 800px;
+    width: 100vh;
   }
   
 

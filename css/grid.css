@@ -1,3 +1,7 @@
+.grid-con, html, body {
+    height: 100%;
+  }
+
 h1 {
     background-color: cadetblue;
     /* position: relative;
@@ -21,22 +25,23 @@ footer{
 .grid-con > div{
     border: 1px solid seagreen;
     /* 1/ span 3 Places the grid in the first colum and continues to the third.*/
-    grid-column: 1/ span 3;
+    /* grid-column: 1/ span 3; */
 }
 
 /* For desktop size: min width 1024px*/
 @media screen and (min-width: 1024px) {
-     /* .grid-con{
+     .grid-con{
         display: grid;
         grid-template-rows: 100px 200px 100px;
         grid-template-columns: 40px 1fr 40px;
 
-    }  */
+    } 
 
     .grid-con > div {
         display: grid;
         /* 1/span 2  Places the grid in the first row continues to the second row */
-        grid-row: 1/span 2;
+        
+        
     }
 
     body{
