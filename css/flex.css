@@ -4,23 +4,32 @@ body {
 }
 h1 {
   background-color: teal;
+  position: sticky;
+  top: -10px;
+  width: 100%;
+}
+
+footer{
+  background-color: cadetblue;
+
+
 }
 .flex-b {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   background-color: steelblue;
-  gap: 10px;
+  gap: 20px;
 }
 
 .flex-b > section {
-  border: 1px solid seagreen;
-  background-color: tomato;
+  border: 10px solid tomato;
   flex-grow: 1;
 }
 
+
 .image-con {
-  width: 300px;
+  width: 340px;
 }
 
 /* Controls the pictcures width, while the height is controled by the web browser.*/
@@ -45,5 +54,6 @@ h1 {
     background-color: turquoise;
     flex-direction: row;
   }
+
 
 }
