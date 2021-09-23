@@ -33,7 +33,7 @@ footer{
 }
 
 .image-con {
-  width: 360px;
+  width: 340px;
 }
 
 /* Controls the pictcures width, while the height is controled by the web browser.*/
@@ -51,10 +51,8 @@ footer{
     
   }
 
-
-
   .image-con {
-    width: 100vh;
+    width: 60%;
   }
   
 
