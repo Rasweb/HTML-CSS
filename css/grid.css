@@ -2,14 +2,12 @@
     display: grid;
     grid-template-rows: 100px 100px 100px;
     grid-template-columns: 40px 1fr 40px;
+    
 }
 
-/* .grid-con > div:first-child{
-    grid-row-start: 1;
-    grid-row-start: 2;
-
-} */
-
+.grid-con > div{
+    border: 1px solid seagreen;
+}
 .grid-con > div:first-child{
 /* 1/span 2  Places the grid in the first row and tells it when to stop spaning */
     grid-row: 1/ span 2;
