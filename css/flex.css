@@ -35,24 +35,16 @@ footer{
 /* Controls the pictcures width, while the height is controled by the web browser.*/
 .image-con img {
   width: 100%;
-  
-
-}
-
-@media screen and (min-width: 786px) {
-  .flex-b {
-    flex-direction: row;
   }
-
-  .flex-b > section {
-    flex-grow: 2;
-  }
-}
-
+/* For desktop size: min width 1024px*/
 @media screen and (min-width: 1024px) {
   .flex-b {
     background-color: turquoise;
     flex-direction: row;
+  }
+
+  .image-con {
+    width: 60%;
   }
 
 
