@@ -1,45 +1,65 @@
-html,
-body {
+.flex-b, html, body {
   height: 100%;
+  margin: 0;
   background-color:skyblue;
 }
+
 h1 {
   background-color: teal;
-  position: sticky;
-  top: -10px;
-  width: 100%;
+  height: 100px;
+  border: 1px solid red;
+
 }
 
 footer{
   background-color: cadetblue;
+  height: 100px;
+  border: 1px solid red;
 }
 
 .flex-b {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   background-color: steelblue;
   gap: 20px;
+
 }
 
 .flex-b > section {
   border: 10px solid tomato;
+  display: flex;
+  flex-grow: 2;
+  
 }
 
 .image-con {
-  width: 340px;
+  width: 360px;
 }
 
 /* Controls the pictcures width, while the height is controled by the web browser.*/
-.image-con img {
+ .image-con img {
   width: 100%;
-  }
+  }  
 
 /* For desktop size: min width 1024px*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1256px) {
   .flex-b {
     background-color: turquoise;
     flex-direction: row;
+    gap: 10px;
+    flex-shrink: 1;
+    
   }
 
+  .flex-b > section {
+    display: flex;
+    flex-shrink: 2;
+  }
+
+  .image-con {
+    width: 800px;
+  }
+  
 
 }
