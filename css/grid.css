@@ -7,11 +7,7 @@
 
 .grid-con > div{
     border: 1px solid seagreen;
-}
-.grid-con > div:first-child{
-/* 1/span 2  Places the grid in the first row and tells it when to stop spaning */
-    grid-row: 1/ span 2;
-
+    grid-column: 1/ span 3;
 }
 
 /* For desktop size: min width 1024px*/
@@ -22,12 +18,15 @@
         grid-template-columns: 25% 25% 25% 25%;
     }
 
-
-
     body{
         background-color: tomato;
-
     }
+
+    .grid-con > div:first-child{
+        /* 1/span 2  Places the grid in the first row and tells it when to stop spaning */
+            grid-row: 1/ span 2;
+        
+        }
 
     
 }
