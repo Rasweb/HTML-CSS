@@ -1,21 +1,21 @@
 h1 {
     background-color: cadetblue;
-    position: relative;
-    top: -20px;
+    /* position: relative;
+    top: -20px; */
 }
 
 footer{
     background-color: cadetblue;
-    position:relative;
-    top: -40px
+    /* position:relative;
+    top: -40px */
   }
 
 .grid-con{
     display: grid;
     grid-template-rows: 100px 100px 100px;
     grid-template-columns: 40px 1fr 40px;
-    position: relative;
-    top: -40px;
+    /* position: relative;
+    top: -40px; */
 }
 
 .grid-con > div{
@@ -26,20 +26,25 @@ footer{
 
 /* For desktop size: min width 1024px*/
 @media screen and (min-width: 1024px) {
-    .grid-con{
+     /* .grid-con{
         display: grid;
         grid-template-rows: 100px 200px 100px;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 40px 1fr 40px;
+
+    }  */
+
+    .grid-con > div {
+        display: grid;
+        /* 1/span 2  Places the grid in the first row continues to the second row */
+        grid-row: 1/span 2;
     }
 
     body{
         background-color: tomato;
     }
 
-    .grid-con > div:first-child{
-        /* 1/span 2  Places the grid in the first row continues to the second row */
-            grid-row: 1/ span 2;
-        }
+      
+
 
     
 }
