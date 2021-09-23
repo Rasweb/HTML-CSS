@@ -50,23 +50,33 @@ footer{
 
 /* For desktop size: min width 1024px*/
 @media screen and (min-width: 1024px) {
-     .grid-con{
-        display: grid;
-        grid-template-rows: 100px 200px 100px;
-        grid-template-columns: 40px 1fr 40px;
-
-    } 
-
-    .grid-con > div {
-        display: grid;
-        /* 1/span 2  Places the grid in the first row continues to the second row */   
-    }
-    
     body{
         background-color: tomato;
     }
 
-      
+    .g1{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .g2{
+        grid-column-start: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .g3{
+        grid-column-start: 3;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+
+    .g4{
+        grid-column-start: 4;
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
 
 
     
