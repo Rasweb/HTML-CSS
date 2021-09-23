@@ -1,12 +1,26 @@
+h1 {
+    background-color: cadetblue;
+    position: relative;
+    top: -20px;
+}
+
+footer{
+    background-color: cadetblue;
+    position:relative;
+    top: -40px
+  }
+
 .grid-con{
     display: grid;
     grid-template-rows: 100px 100px 100px;
     grid-template-columns: 40px 1fr 40px;
-    
+    position: relative;
+    top: -40px;
 }
 
 .grid-con > div{
     border: 1px solid seagreen;
+    /* 1/ span 3 Places the grid in the first colum and continues to the third.*/
     grid-column: 1/ span 3;
 }
 
@@ -23,9 +37,8 @@
     }
 
     .grid-con > div:first-child{
-        /* 1/span 2  Places the grid in the first row and tells it when to stop spaning */
+        /* 1/span 2  Places the grid in the first row continues to the second row */
             grid-row: 1/ span 2;
-        
         }
 
     
