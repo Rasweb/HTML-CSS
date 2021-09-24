@@ -3,9 +3,7 @@
   }
 
 h1 {
-    background-color: cadetblue;
-
-    
+    color: blue;    
 }
 
 footer{
@@ -24,35 +22,25 @@ footer{
 }
 
 .grid-con > div{
-    border: 1px solid seagreen;
-    /* grid-column-start: 1;
-    grid-column-end: 4; */
-    /* 1/ span 3 Places the grid in the first colum and continues to the third.*/
-    /* grid-column: 1/ span 3; */
+    border: 2px solid red;
+    background-color:lightseagreen;
 }
+
 
 .g1{
     grid-area: area1;
-    /* grid-row-start: 1;
-    grid-row-end: 3; */
 }
 
 .g2{
     grid-area: area2;
-    /* grid-row-start: 3;
-    grid-row-end: 5; */
 }
 
 .g3{
     grid-area: area3;
-    /* grid-row-start: 5;
-    grid-row-end: 7;    */
 }
 
 .g4{
     grid-area: area4;
-     /* grid-row-start: 5;
-    grid-row-end: 7;  */
 } 
 
 /* For desktop size: min width 1024px*/
@@ -61,18 +49,20 @@ footer{
         background-color: tomato;
     }
 
-        .grid-con > div{
-            grid-column: 1/ span 3;
-        }
-    /* .grid-con{
+     .grid-con{
+        grid-template-columns: 200px 1fr 1fr 200px;
+        grid-template-rows: 100px 400px 100px 50px;
         grid-template-areas: 
         "area1 area2 area3 area4"
         "area1 area2 area3 area4"
         "area1 area2 area3 area4"
         "area1 area2 area3 area4";
+    } 
+
+    /* h1{
+        font-size: 20px;
     } */
 
-    
 
     
 }
