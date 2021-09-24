@@ -7,7 +7,6 @@ h1 {
   background-color: teal;
   height: 100px;
   border: 1px solid red;
-
 }
 
 footer{
@@ -16,25 +15,23 @@ footer{
   border: 1px solid red;
 }
 
-
 .flex-b {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   background-color: steelblue;
   gap: 20px;
-
 }
 
 .flex-b > section {
   border: 10px solid tomato;
   display: flex;
-  flex-grow: 2;
-  
+  flex-grow: 1;
 }
 
 .image-con {
-  width: 340px;
+  /* The pitcure will change with the screen size */
+  flex: calc(40%)
 }
 
 /* Controls the pictcures width, while the height is controled by the web browser.*/
@@ -42,19 +39,21 @@ footer{
   width: 100%;
   }  
 
-/* For desktop size: min width 1024px*/
+/* For desktop size: min width 1256px*/
 @media screen and (min-width: 1256px) {
   .flex-b {
+    display: flex;
     background-color: turquoise;
     flex-direction: row;
     gap: 10px;
-    flex-shrink: 1;
-    
   }
 
   .image-con {
-    width: 60%;
-  }
+  /* flex-basis: calc(70%)  */
+  flex: calc(80%)
+}
+
+
   
 
 }
